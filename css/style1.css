@@ -1,0 +1,232 @@
+body {
+    background: url(../image/todo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.nav-logo {
+
+    font-family: "Matemasie", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    margin: 1rem 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+
+
+}
+
+.nav-links {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 1%;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.nav-links a:hover{
+    color: red;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 1.5rem;
+
+
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar {
+    justify-content: space-between;
+
+}
+
+.nav-logo img {
+    width: 4rem;
+    height: 5vh;
+}
+
+.letterSection {
+    margin: 5% 30%;
+
+}
+
+.textbox {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 2rem;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+
+}
+
+.checkbox {
+    cursor: pointer;
+
+}
+
+.todo{
+    display: flex;
+    padding: 14px;
+    position: relative;
+    top: -30rem;
+
+}
+
+.todo:has(.checkbox:checked){
+    color: rgb(84,35,0);
+    background: rgba(0,0,0,0.13);
+    text-decoration: line-through 1.5px;
+}
+
+.popup{
+    background-color: black;
+    opacity: 90%;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:white;
+    visibility: hidden;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    background:transparent;
+    color: white;
+    margin: 30px 0 10px;
+}
+
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form{
+    display: block;
+    color: white;
+
+}
+form .textbox{
+    width: 80%;
+    height: 6vh;
+    margin: .5rem;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 1rem;
+
+
+}
+form .textbox1{
+    width: 80%;
+    height: 20vh;
+    color: white;
+    margin: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+
+.popup1{
+    background-color: black;
+    opacity: 90%;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:white;
+    visibility: hidden;
+}
+
+.open-popup1{
+    visibility: visible;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup1 h2{
+    font-size: 38px;
+    font-weight: 500;
+    background:transparent;
+    color: white;
+    margin: 30px 0 10px;
+}
+
+
+.popup1 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form{
+    display: block;
+
+}
+form .textbox2{
+    width: 80%;
+    height: 6vh;
+    margin: .5rem;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 1rem;
+
+
+}

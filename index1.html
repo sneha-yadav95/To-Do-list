@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style1.css">
+
+</head>
+<body>
+<div class="background">
+    <nav>
+        <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="image/pexelslogo.png" alt="logoimg"/>
+            To-Do List
+        </div>
+
+                <ul class="nav-links">
+                    <li class="nav-menu">
+                       <a href="index1.html"> Home </a>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#" onclick="openpopup()">  Contacts </a>
+                       
+                    </li>
+                    <li class="nav-menu">
+                        
+                        <a href="#" onclick="openpopup1()">  Sign in </a>
+                    </li>
+                    
+                </ul>
+
+        </div>
+    </nav>
+
+    <div class="letterSection">
+        <img src="image/letterpaper.png">
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    <div class="todo">
+        <input type="text" class="textbox" id="t1" placeholder="(empty)">
+        <input type="checkbox" class="checkbox" onclick="checkedup()">
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="popup" id="popup">
+            <form>
+                <h2>
+            Contact
+        </h2>
+
+        <input type="text" class="textbox" placeholder="Your Name"/>
+        <input type="text" class="textbox" placeholder="Enter Email"/>
+        <textarea class="textbox1" placeholder="Message..."></textarea>
+        <button type="button" onclick="closepopup()">Submit</button>
+    </form>
+
+        </div>
+
+    </div>
+
+    <div class="container1">
+        <div class="popup1" id="popup1">
+            <form>
+                <h2>
+            SignIn
+        </h2>
+
+        <input type="text" class="textbox2" placeholder="Your Name"/>
+        <input type="text" class="textbox2" placeholder="Enter Email"/>
+        <input type="text" class="textbox2" placeholder="Enter Password"/>
+        <button type="button" onclick="closepopup1()">Submit</button>
+    </form>
+
+        </div>
+
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openpopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+
+        let popup1 = document.getElementById("popup1");
+        function openpopup1(){
+            popup1.classList.add("open-popup1");
+        }
+
+        function closepopup1(){
+            popup1.classList.remove("open-popup1");
+        }
+
+    </script>
+</div>
+</body>
+</html>
